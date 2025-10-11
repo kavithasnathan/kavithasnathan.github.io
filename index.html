@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Product / UI Designer</title>
+  <meta name="description" content="Portfolio — UI / Interaction Design by Your Name" />
+  <style>
+    :root{--accent:#0b6;--bg:#0f1720;--card:#0b1220;color-scheme:dark}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;background:linear-gradient(180deg,#071019 0%,#071a25 100%);color:#e6eef6;padding:32px}
+    .wrap{max-width:1024px;margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#0b92ff);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:1.4rem}
+    p.lead{margin:6px 0 0;color:#9fb0c9}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:26px}
+    .card{background:rgba(255,255,255,0.03);padding:14px;border-radius:12px;backdrop-filter:blur(4px)}
+    .thumb{height:140px;border-radius:8px;background:linear-gradient(90deg,#0b6,#06f);display:flex;align-items:center;justify-content:center;color:#021; font-weight:700}
+    footer{margin-top:30px;color:#9fb0c9;font-size:0.9rem}
+    a.cta{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#001;text-decoration:none;font-weight:600}
+    @media (max-width:520px){body{padding:18px}.logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">YS</div>
+        <div>
+          <h1>Your Name — UI / Interaction Designer</h1>
+          <p class="lead">Designing clear product experiences for web & mobile — portfolio highlights below.</p>
+        </div>
+      </div>
+      <nav><a class="cta" href="#contact">Contact</a></nav>
+    </header>
+
+    <section aria-label="Projects">
+      <div class="grid">
+        <article class="card">
+          <div class="thumb">Project 1</div>
+          <h3>Project title — product UI</h3>
+          <p>Short (1-line) project summary. Tools: Figma, React, Prototyping.</p>
+        </article>
+
+        <article class="card">
+          <div class="thumb">Project 2</div>
+          <h3>Project title — interaction design</h3>
+          <p>Short summary. Link to case study or PDF in repo or external.</p>
+        </article>
+
+        <!-- add more projects -->
+      </div>
+    </section>
+
+    <footer id="contact">
+      <p>Want full case studies, Figma files or resume? <a href="mailto:you@domain.com">you@domain.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
