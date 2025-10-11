@@ -1,61 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Product / UI Designer</title>
-  <meta name="description" content="Portfolio — UI / Interaction Design by Your Name" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavitha S — UX Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Kavitha S — UX Designer with 9+ years experience designing user-centered digital products." />
   <style>
-    :root{--accent:#0b6;--bg:#0f1720;--card:#0b1220;color-scheme:dark}
-    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;background:linear-gradient(180deg,#071019 0%,#071a25 100%);color:#e6eef6;padding:32px}
-    .wrap{max-width:1024px;margin:0 auto}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#0b92ff);display:flex;align-items:center;justify-content:center;font-weight:700}
-    h1{margin:0;font-size:1.4rem}
-    p.lead{margin:6px 0 0;color:#9fb0c9}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:26px}
-    .card{background:rgba(255,255,255,0.03);padding:14px;border-radius:12px;backdrop-filter:blur(4px)}
-    .thumb{height:140px;border-radius:8px;background:linear-gradient(90deg,#0b6,#06f);display:flex;align-items:center;justify-content:center;color:#021; font-weight:700}
-    footer{margin-top:30px;color:#9fb0c9;font-size:0.9rem}
-    a.cta{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#001;text-decoration:none;font-weight:600}
-    @media (max-width:520px){body{padding:18px}.logo{width:48px;height:48px}}
+    :root {
+      --accent: #00b894;
+      --bg: #0f172a;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --card: rgba(255, 255, 255, 0.05);
+      --radius: 12px;
+      scroll-behavior: smooth;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    header h1 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: var(--accent); }
+    section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 6rem 2rem 4rem;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .about p {
+      max-width: 700px;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .experience, .projects, .education {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1.2rem 1.5rem;
+      border-radius: var(--radius);
+      transition: transform 0.2s ease;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .card h3 { color: var(--text); margin-bottom: 0.4rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a:hover { text-decoration: underline; }
+
+    /* Mobile */
+    @media (max-width: 640px) {
+      nav ul { gap: 1rem; font-size: 0.9rem; }
+      section { padding-top: 5rem; }
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">YS</div>
-        <div>
-          <h1>Your Name — UI / Interaction Designer</h1>
-          <p class="lead">Designing clear product experiences for web & mobile — portfolio highlights below.</p>
-        </div>
-      </div>
-      <nav><a class="cta" href="#contact">Contact</a></nav>
-    </header>
 
-    <section aria-label="Projects">
-      <div class="grid">
-        <article class="card">
-          <div class="thumb">Project 1</div>
-          <h3>Project title — product UI</h3>
-          <p>Short (1-line) project summary. Tools: Figma, React, Prototyping.</p>
-        </article>
+  <header>
+    <h1>Kavitha S</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <article class="card">
-          <div class="thumb">Project 2</div>
-          <h3>Project title — interaction design</h3>
-          <p>Short summary. Link to case study or PDF in repo or external.</p>
-        </article>
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m <strong>Kavitha S</strong> — a Lead UX Designer with over 9 years of experience crafting intuitive and scalable digital products across fintech, education, and enterprise platforms. 
+      I specialize in turning complex workflows into simple, human-centered experiences that drive measurable impact.
+    </p>
+    <p>
+      My work combines research, strategy, and design to deliver seamless interfaces and meaningful user journeys. 
+      I enjoy collaborating with cross-functional teams and mentoring young designers.
+    </p>
+  </section>
 
-        <!-- add more projects -->
-      </div>
-    </section>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
 
-    <footer id="contact">
-      <p>Want full case studies, Figma files or resume? <a href="mailto:you@domain.com">you@domain.com</a></p>
-    </footer>
-  </div>
+    <div class="card">
+      <h3>Lead UX Designer — Accolite Digital</h3>
+      <p>Designed BT’s Skill Tracking Portal “ELEVATE” for field engineers to manage and grow their capabilities. Developed design systems improving consistency and efficiency across teams.</p>
+    </div>
+
+    <div class="card">
+      <h3>Senior UX Designer — Simplilearn</h3>
+      <p>Led end-to-end UX design of Simplilearn’s e-learning platform, increasing course completion and retention rates by 68% through research-driven improvements.</p>
+    </div>
+
+    <div class="card">
+      <h3>Senior UX Designer — CareStack</h3>
+      <p>Delivered scalable SaaS design for dental practice management software, improving patient portal usability and workflow efficiency for providers.</p>
+    </div>
+
+    <div class="card">
+      <h3>Designer — Moonraft Innovation Labs</h3>
+      <p>Enhanced engagement for mobile banking and enterprise networking apps through data-driven UX improvements and visual redesigns.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>BT Skill Tracking Portal — ELEVATE</h3>
+      <p>Designed a centralized skill management platform enabling engineers to track growth and align with business capability needs.</p>
+    </div>
+
+    <div class="card">
+      <h3>CareStack SaaS Platform</h3>
+      <p>Redesigned the patient portal and appointment booking experience, scalable for clinics of all sizes, improving satisfaction and adoption rates.</p>
+    </div>
+
+    <div class="card">
+      <h3>Simplilearn Learning Platform</h3>
+      <p>Created dashboards, onboarding flows, and learner progress features to enhance engagement and usability across devices.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="education">
+    <h2>Education</h2>
+
+    <div class="card">
+      <h3>Bachelor’s Degree in Design</h3>
+      <p>Specialization in Interaction and Visual Design — with a focus on UX strategy, usability testing, and design thinking.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>
+      I’m always open to discussing design opportunities, collaborations, or sharing ideas.
+      <br><br>
+      📧 <a href="mailto:kavithas@example.com">kavithas@example.com</a>  
+      <br>
+      💼 <a href="https://linkedin.com/in/kavitha-s" target="_blank">linkedin.com/in/kavitha-s</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Kavitha S — UX Designer Portfolio
+  </footer>
+
 </body>
 </html>
